@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DF2D9167-5F5D-4410-95AC-806783FF6CED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>_16_Prison</RootNamespace>
+    <AssemblyName>16_Prison</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Marcus-Roberto-Google-Play-Google-Drive.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="websocket-sharp, Version=1.0.2.23707, Culture=neutral, PublicKeyToken=5660b08a1845a91e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\websocket-sharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlarmSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlarmSystem.Designer.cs">
+      <DependentUpon>AlarmSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log_in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log_in.Designer.cs">
+      <DependentUpon>Log_in.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeetingManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeetingManagement.Designer.cs">
+      <DependentUpon>MeetingManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonalInformation.Designer.cs">
+      <DependentUpon>PersonalInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prisoner_Location.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prisoner_Location.Designer.cs">
+      <DependentUpon>Prisoner_Location.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prisoner_Track.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prisoner_Track.Designer.cs">
+      <DependentUpon>Prisoner_Track.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RewardAndPunishment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RewardAndPunishment.Designer.cs">
+      <DependentUpon>RewardAndPunishment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScoreManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScoreManagement.Designer.cs">
+      <DependentUpon>ScoreManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Warning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warning.Designer.cs">
+      <DependentUpon>Warning.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AlarmSystem.resx">
+      <DependentUpon>AlarmSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Log_in.resx">
+      <DependentUpon>Log_in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prisoner_Location.resx">
+      <DependentUpon>Prisoner_Location.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prisoner_Track.resx">
+      <DependentUpon>Prisoner_Track.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Warning.resx">
+      <DependentUpon>Warning.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\account_avatar_person_profile_user_24px_1225506_easyicon.net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\key_lock_open_password_unlock_24px_1225503_easyicon.net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\room_64px_1182178_easyicon.net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\track_changes_64px_1182317_easyicon.net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\error_64px_1181827_easyicon.net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\portrait_64px_1182144_easyicon.net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\assignment_64px_1181657_easyicon.net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\class_64px_1181754_easyicon.net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\iso_64px_1181960_easyicon.net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\people_64px_1182102_easyicon.net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Marcus-Roberto-Google-Play-Google-Drive.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
